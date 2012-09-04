@@ -1,0 +1,16 @@
+{
+  "name": "munin-client",
+  "description": "Munin client for Node",
+  "version": "0.1.0",
+  "author": "Sean Coates <sean@seancoates.com>",
+  "contributors": [
+    { "name": "Sean Coates", "email": "sean@seancoates.com" }
+  ],
+  "keywords": ["munin"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fictivekin/node-munin.git"
+  },
+  "files": ["munin.js"],
+  "engines": { "node": ">=0.8.0" }
+}
