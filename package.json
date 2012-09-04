@@ -9,8 +9,9 @@
   "keywords": ["munin"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fictivekin/node-munin.git"
+    "url": "https://github.com/fictivekin/node-munin-client.git"
   },
+  "main": "munin.js",
   "files": ["munin.js"],
   "engines": { "node": ">=0.8.0" }
 }
