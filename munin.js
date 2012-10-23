@@ -126,17 +126,18 @@ Munin.prototype = {
 					munin.commandComplete();
 				} else {
 					// collect data
-					var parts = data.split(' ', 2);
+					var parts = data.split(' '),
+						value = parts.slice(1).join(' ');
 					if (parts[0].indexOf('.') == -1) {
 						// if it doesn't contains a dot, that is the name
-						munin.commandBuf[parts[0]] = parts[1];
+						munin.commandBuf[parts[0]] = value;
 					} else {
 						// but if it does, create a sub-object:
 						var name = parts[0].split('.', 2);
 						if (undefined === munin.commandBuf[name[0]]) {
 							munin.commandBuf[name[0]] = {};
 						}
-						munin.commandBuf[name[0]][name[1]] = parts[1];
+						munin.commandBuf[name[0]][name[1]] = value;
 					}
 				}
 				break;
